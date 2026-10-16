@@ -44,8 +44,8 @@ namespace campusOneDigitalAcademy
         {
             if (textBoxUserName.Text == "Admin" && textBoxPassword.Text == "Campusone@123")
             {
-                RegistrationForm regForm = new RegistrationForm();
-                regForm.Show();
+                DashboardForm dashForm = new DashboardForm();
+                dashForm.Show();
                 this.Hide();
             }
             else
@@ -61,6 +61,16 @@ namespace campusOneDigitalAcademy
             {
                 Application.Exit();
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
