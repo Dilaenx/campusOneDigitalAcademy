@@ -37,8 +37,11 @@
             this.lblTotalStudentsCount = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,20 +50,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(487, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 30);
+            this.label1.Size = new System.Drawing.Size(216, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Main Dashboard";
             // 
             // lblTotalStudents
             // 
             this.lblTotalStudents.AutoSize = true;
-            this.lblTotalStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStudents.Font = new System.Drawing.Font("Microsoft Tai Le", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalStudents.Location = new System.Drawing.Point(284, 60);
             this.lblTotalStudents.Name = "lblTotalStudents";
-            this.lblTotalStudents.Size = new System.Drawing.Size(207, 20);
+            this.lblTotalStudents.Size = new System.Drawing.Size(198, 21);
             this.lblTotalStudents.TabIndex = 1;
             this.lblTotalStudents.Text = "Total Registered Students : ";
             this.lblTotalStudents.Click += new System.EventHandler(this.lblTotalStudents_Click);
@@ -68,7 +71,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(23, 157);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(228, 40);
@@ -80,7 +83,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(23, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(228, 34);
@@ -92,11 +95,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(278, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(278, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 49;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 544);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 504);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -125,6 +128,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MAIN MENU";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(42, 576);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(188, 34);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "EXIT";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -136,17 +151,35 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button3
+            // textBoxSearch
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(42, 576);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 34);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.textBoxSearch.Location = new System.Drawing.Point(438, 95);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(159, 22);
+            this.textBoxSearch.TabIndex = 7;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Tai Le", 8.139131F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(611, 92);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(92, 31);
+            this.SearchButton.TabIndex = 8;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(289, 94);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(127, 24);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "Search By";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DashboardForm
             // 
@@ -154,6 +187,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(921, 650);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblTotalStudentsCount);
             this.Controls.Add(this.dataGridView1);
@@ -182,5 +218,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

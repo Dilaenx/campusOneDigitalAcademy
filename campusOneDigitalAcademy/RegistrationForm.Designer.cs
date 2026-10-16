@@ -67,9 +67,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -92,7 +92,7 @@
             this.groupBox1.Controls.Add(this.buttonRegistration);
             this.groupBox1.Location = new System.Drawing.Point(359, 54);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(475, 603);
+            this.groupBox1.Size = new System.Drawing.Size(488, 603);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Registration ";
@@ -119,7 +119,7 @@
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.SystemColors.Menu;
-            this.buttonDelete.Location = new System.Drawing.Point(379, 564);
+            this.buttonDelete.Location = new System.Drawing.Point(389, 564);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 11;
@@ -137,7 +137,7 @@
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Location = new System.Drawing.Point(13, 421);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(441, 125);
+            this.groupBox4.Size = new System.Drawing.Size(452, 125);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Parent Details ";
@@ -146,7 +146,7 @@
             // 
             this.textBoxContactNo.Location = new System.Drawing.Point(123, 97);
             this.textBoxContactNo.Name = "textBoxContactNo";
-            this.textBoxContactNo.Size = new System.Drawing.Size(200, 22);
+            this.textBoxContactNo.Size = new System.Drawing.Size(110, 22);
             this.textBoxContactNo.TabIndex = 10;
             this.textBoxContactNo.TextChanged += new System.EventHandler(this.textBoxContactNo_TextChanged);
             // 
@@ -164,7 +164,7 @@
             // 
             this.textBoxNIC.Location = new System.Drawing.Point(123, 63);
             this.textBoxNIC.Name = "textBoxNIC";
-            this.textBoxNIC.Size = new System.Drawing.Size(200, 22);
+            this.textBoxNIC.Size = new System.Drawing.Size(110, 22);
             this.textBoxNIC.TabIndex = 9;
             this.textBoxNIC.TextChanged += new System.EventHandler(this.textBoxNIC_TextChanged);
             // 
@@ -181,7 +181,7 @@
             // 
             this.textBoxParentName.Location = new System.Drawing.Point(123, 30);
             this.textBoxParentName.Name = "textBoxParentName";
-            this.textBoxParentName.Size = new System.Drawing.Size(200, 22);
+            this.textBoxParentName.Size = new System.Drawing.Size(312, 22);
             this.textBoxParentName.TabIndex = 8;
             this.textBoxParentName.TextChanged += new System.EventHandler(this.textBoxParentName_TextChanged);
             // 
@@ -219,7 +219,7 @@
             this.groupBox2.Controls.Add(this.textBoxLastName);
             this.groupBox2.Location = new System.Drawing.Point(13, 80);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(441, 156);
+            this.groupBox2.Size = new System.Drawing.Size(452, 156);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Details ";
@@ -297,7 +297,7 @@
             // 
             this.textBoxFristName.Location = new System.Drawing.Point(123, 26);
             this.textBoxFristName.Name = "textBoxFristName";
-            this.textBoxFristName.Size = new System.Drawing.Size(200, 22);
+            this.textBoxFristName.Size = new System.Drawing.Size(312, 22);
             this.textBoxFristName.TabIndex = 2;
             this.textBoxFristName.TextChanged += new System.EventHandler(this.textBoxFristName_TextChanged);
             // 
@@ -305,7 +305,7 @@
             // 
             this.textBoxLastName.Location = new System.Drawing.Point(123, 59);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(200, 22);
+            this.textBoxLastName.Size = new System.Drawing.Size(312, 22);
             this.textBoxLastName.TabIndex = 4;
             this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextChanged);
             // 
@@ -332,7 +332,7 @@
             this.groupBox3.Controls.Add(this.textBoxEmail);
             this.groupBox3.Location = new System.Drawing.Point(13, 255);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(441, 160);
+            this.groupBox3.Size = new System.Drawing.Size(452, 160);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contact Details ";
@@ -342,7 +342,7 @@
             // 
             this.textBoxAddress.Location = new System.Drawing.Point(123, 21);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(200, 48);
+            this.textBoxAddress.Size = new System.Drawing.Size(312, 48);
             this.textBoxAddress.TabIndex = 10;
             this.textBoxAddress.Text = "";
             this.textBoxAddress.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -396,7 +396,7 @@
             // 
             this.textBoxMobilePhone.Location = new System.Drawing.Point(123, 122);
             this.textBoxMobilePhone.Name = "textBoxMobilePhone";
-            this.textBoxMobilePhone.Size = new System.Drawing.Size(100, 22);
+            this.textBoxMobilePhone.Size = new System.Drawing.Size(110, 22);
             this.textBoxMobilePhone.TabIndex = 6;
             this.textBoxMobilePhone.TextChanged += new System.EventHandler(this.textBoxMobilePhone_TextChanged);
             // 
@@ -404,7 +404,7 @@
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(123, 82);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(200, 22);
+            this.textBoxEmail.Size = new System.Drawing.Size(312, 22);
             this.textBoxEmail.TabIndex = 5;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
@@ -422,10 +422,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(419, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 30);
+            this.label1.Size = new System.Drawing.Size(326, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "STUDENT REGISTRATION";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -455,7 +455,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(19, 174);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(228, 33);
@@ -478,10 +478,22 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MAIN MENU";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(32, 606);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(196, 34);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "EXIT";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(19, 239);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(228, 34);
@@ -499,18 +511,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(32, 606);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 34);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // RegistrationForm
             // 
