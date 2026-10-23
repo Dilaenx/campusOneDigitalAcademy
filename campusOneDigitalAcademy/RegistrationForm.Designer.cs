@@ -49,7 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxFristName = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -67,6 +67,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -80,7 +81,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox1.Controls.Add(this.comboBoxReg);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.buttonDelete);
@@ -215,7 +216,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBoxFristName);
+            this.groupBox2.Controls.Add(this.textBoxFirstName);
             this.groupBox2.Controls.Add(this.textBoxLastName);
             this.groupBox2.Location = new System.Drawing.Point(13, 80);
             this.groupBox2.Name = "groupBox2";
@@ -293,13 +294,14 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Gender ";
             // 
-            // textBoxFristName
+            // textBoxFirstName
             // 
-            this.textBoxFristName.Location = new System.Drawing.Point(123, 26);
-            this.textBoxFristName.Name = "textBoxFristName";
-            this.textBoxFristName.Size = new System.Drawing.Size(312, 22);
-            this.textBoxFristName.TabIndex = 2;
-            this.textBoxFristName.TextChanged += new System.EventHandler(this.textBoxFristName_TextChanged);
+            this.textBoxFirstName.Location = new System.Drawing.Point(123, 26);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBoxFirstName.Size = new System.Drawing.Size(312, 22);
+            this.textBoxFirstName.TabIndex = 2;
+            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
             // 
             // textBoxLastName
             // 
@@ -467,16 +469,29 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox5.Controls.Add(this.button4);
             this.groupBox5.Controls.Add(this.button2);
             this.groupBox5.Controls.Add(this.button1);
             this.groupBox5.Controls.Add(this.button3);
             this.groupBox5.Controls.Add(this.pictureBox1);
-            this.groupBox5.Location = new System.Drawing.Point(3, 1);
+            this.groupBox5.Location = new System.Drawing.Point(3, -8);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(269, 678);
+            this.groupBox5.Size = new System.Drawing.Size(269, 697);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MAIN MENU";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SkyBlue;
+            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(19, 225);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(228, 33);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "STUDENT REGISTRATION";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -494,7 +509,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(19, 239);
+            this.button3.Location = new System.Drawing.Point(19, 281);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(228, 34);
             this.button3.TabIndex = 3;
@@ -505,18 +520,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-47, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-55, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(370, 686);
+            this.pictureBox1.Size = new System.Drawing.Size(384, 687);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(918, 679);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.linkLabel2);
@@ -560,7 +576,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxFristName;
+        private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxMobilePhone;
@@ -584,5 +600,6 @@
         private System.Windows.Forms.RichTextBox textBoxAddress;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -90,7 +90,7 @@ namespace campusOneDigitalAcademy
                 if (dr.Read()) 
                 {
                     
-                    textBoxFristName.Text = dr["firstName"].ToString();
+                    textBoxFirstName.Text = dr["firstName"].ToString();
                     textBoxLastName.Text = dr["lastName"].ToString();
                     dateTimePicker1.Value = Convert.ToDateTime(dr["dateOfBirth"]);
 
@@ -122,7 +122,7 @@ namespace campusOneDigitalAcademy
             }
         }
 
-        private void textBoxFristName_TextChanged(object sender, EventArgs e)
+        private void textBoxFirstName_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -200,7 +200,7 @@ namespace campusOneDigitalAcademy
 
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@regNo", int.Parse(comboBoxReg.Text));
-                cmd.Parameters.AddWithValue("@fName", textBoxFristName.Text);
+                cmd.Parameters.AddWithValue("@fName", textBoxFirstName.Text);
                 cmd.Parameters.AddWithValue("@lName", textBoxLastName.Text);
                 cmd.Parameters.AddWithValue("@dob", dateTimePicker1.Value);
                 cmd.Parameters.AddWithValue("@gender", gender);
@@ -216,7 +216,7 @@ namespace campusOneDigitalAcademy
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                MessageBox.Show("Record Added Succesfully", "Register Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Record Added Successfully", "Register Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -252,7 +252,7 @@ namespace campusOneDigitalAcademy
 
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@regNo", int.Parse(comboBoxReg.Text));
-                cmd.Parameters.AddWithValue("@fName", textBoxFristName.Text);
+                cmd.Parameters.AddWithValue("@fName", textBoxFirstName.Text);
                 cmd.Parameters.AddWithValue("@lName", textBoxLastName.Text);
                 cmd.Parameters.AddWithValue("@dob", dateTimePicker1.Value);
                 cmd.Parameters.AddWithValue("@gender", gender);
@@ -270,7 +270,7 @@ namespace campusOneDigitalAcademy
                 con.Close();
 
               
-                MessageBox.Show("Record Updated Succesfully", "Update Student", MessageBoxButtons.OK, MessageBoxIcon.Information); //
+                MessageBox.Show("Record Updated Successfully", "Update Student", MessageBoxButtons.OK, MessageBoxIcon.Information); 
 
               
                 buttonClear_Click(sender, e);
@@ -289,7 +289,7 @@ namespace campusOneDigitalAcademy
         private void buttonClear_Click(object sender, EventArgs e)
         {
             comboBoxReg.Text = "";
-            textBoxFristName.Clear();
+            textBoxFirstName.Clear();
             textBoxLastName.Clear();
             dateTimePicker1.Value = DateTime.Now;
             radioButtonMale.Checked = false;
@@ -307,7 +307,7 @@ namespace campusOneDigitalAcademy
         private void buttonDelete_Click(object sender, EventArgs e)
         {
           
-            DialogResult result = MessageBox.Show("Are you sure, Do you really want to Delete this Record...?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //[cite: 1]
+            DialogResult result = MessageBox.Show("Are you sure, Do you really want to Delete this Record...?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
 
             if (result == DialogResult.Yes)
             {
@@ -324,7 +324,7 @@ namespace campusOneDigitalAcademy
                     con.Close();
 
                   
-                    MessageBox.Show("Record Deleted Succesfully", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Information); //[cite: 1]
+                    MessageBox.Show("Record Deleted Successfully", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Information); 
 
                 
                     buttonClear_Click(sender, e);
@@ -402,6 +402,16 @@ namespace campusOneDigitalAcademy
             {
                 Application.Exit();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

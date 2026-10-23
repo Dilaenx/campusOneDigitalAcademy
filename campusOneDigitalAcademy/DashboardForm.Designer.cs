@@ -37,6 +37,7 @@
             this.lblTotalStudentsCount = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
@@ -53,9 +54,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.27826F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(487, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 33);
+            this.label1.Size = new System.Drawing.Size(257, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Main Dashboard";
+            this.label1.Text = "MAIN DASHBOARD";
             // 
             // lblTotalStudents
             // 
@@ -70,11 +71,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button1.BackColor = System.Drawing.SystemColors.Menu;
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(23, 157);
+            this.button1.Location = new System.Drawing.Point(23, 225);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 40);
+            this.button1.Size = new System.Drawing.Size(228, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "STUDENT REGISTRATION";
             this.button1.UseVisualStyleBackColor = false;
@@ -84,9 +85,9 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(23, 222);
+            this.button2.Location = new System.Drawing.Point(23, 289);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 34);
+            this.button2.Size = new System.Drawing.Size(228, 32);
             this.button2.TabIndex = 3;
             this.button2.Text = "LOGOUT";
             this.button2.UseVisualStyleBackColor = false;
@@ -99,7 +100,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 49;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 504);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 537);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -117,22 +118,34 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(-7, 2);
+            this.groupBox1.Location = new System.Drawing.Point(-7, -16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(269, 678);
+            this.groupBox1.Size = new System.Drawing.Size(269, 739);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MAIN MENU";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SkyBlue;
+            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(23, 170);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(228, 34);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "MAIN DASHBOARD";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(42, 576);
+            this.button3.Location = new System.Drawing.Point(42, 597);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(188, 34);
             this.button3.TabIndex = 5;
@@ -143,9 +156,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-42, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(-75, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 653);
+            this.pictureBox1.Size = new System.Drawing.Size(443, 716);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -185,8 +198,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(921, 650);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(921, 683);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.textBoxSearch);
@@ -221,5 +234,6 @@
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button4;
     }
 }
