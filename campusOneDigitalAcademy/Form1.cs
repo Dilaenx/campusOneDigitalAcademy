@@ -27,9 +27,9 @@ namespace campusOneDigitalAcademy
             try
             {
                 if (con.State == ConnectionState.Closed) con.Open();
-
-             
-                string query = "SELECT COUNT(1) FROM Credentials WHERE Username = @Username AND Password = @Password";
+               
+                string query = "SELECT COUNT(1) FROM Credentials WHERE Username = @Username COLLATE SQL_Latin1_General_CP1_CS_AS AND Password = @Password COLLATE SQL_Latin1_General_CP1_CS_AS";
+               
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Username", textBoxUserName.Text.Trim());
                 cmd.Parameters.AddWithValue("@Password", textBoxPassword.Text.Trim());
@@ -39,6 +39,8 @@ namespace campusOneDigitalAcademy
                 if (count == 1)
                 {
                     DashboardForm dashForm = new DashboardForm();
+                    dashForm.StartPosition = FormStartPosition.Manual;
+                    dashForm.Location = this.Location;
                     dashForm.Show();
                     this.Hide();
                 }

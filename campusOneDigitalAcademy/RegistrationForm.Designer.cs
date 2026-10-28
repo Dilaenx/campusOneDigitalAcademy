@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBoxReg = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.buttonDelete = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBoxContactNo = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxParentName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.buttonClear = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.radioButtonFemale = new System.Windows.Forms.RadioButton();
@@ -51,7 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBoxAddress = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,15 +61,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxMobilePhone = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.buttonRegistration = new System.Windows.Forms.Button();
+            this.btnRegistration = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMainDashbord = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnstdReg = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -84,13 +84,13 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox1.Controls.Add(this.comboBoxReg);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.buttonDelete);
+            this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.buttonClear);
+            this.groupBox1.Controls.Add(this.btnClear);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.buttonUpdate);
+            this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.buttonRegistration);
+            this.groupBox1.Controls.Add(this.btnRegistration);
             this.groupBox1.Location = new System.Drawing.Point(359, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(488, 603);
@@ -117,16 +117,16 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "Reg No ";
             // 
-            // buttonDelete
+            // btnDelete
             // 
-            this.buttonDelete.BackColor = System.Drawing.SystemColors.Menu;
-            this.buttonDelete.Location = new System.Drawing.Point(389, 564);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelete.TabIndex = 11;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.btnDelete.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnDelete.Location = new System.Drawing.Point(389, 564);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // groupBox4
             // 
@@ -196,16 +196,16 @@
             this.label11.Text = "NIC ";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // buttonClear
+            // btnClear
             // 
-            this.buttonClear.BackColor = System.Drawing.SystemColors.Menu;
-            this.buttonClear.Location = new System.Drawing.Point(298, 564);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonClear.TabIndex = 10;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.UseVisualStyleBackColor = false;
-            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            this.btnClear.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnClear.Location = new System.Drawing.Point(298, 564);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // groupBox2
             // 
@@ -311,16 +311,16 @@
             this.textBoxLastName.TabIndex = 4;
             this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextChanged);
             // 
-            // buttonUpdate
+            // btnUpdate
             // 
-            this.buttonUpdate.BackColor = System.Drawing.SystemColors.Menu;
-            this.buttonUpdate.Location = new System.Drawing.Point(116, 564);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdate.TabIndex = 9;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnUpdate.Location = new System.Drawing.Point(116, 564);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // groupBox3
             // 
@@ -410,16 +410,16 @@
             this.textBoxEmail.TabIndex = 5;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
-            // buttonRegistration
+            // btnRegistration
             // 
-            this.buttonRegistration.BackColor = System.Drawing.SystemColors.Menu;
-            this.buttonRegistration.Location = new System.Drawing.Point(20, 564);
-            this.buttonRegistration.Name = "buttonRegistration";
-            this.buttonRegistration.Size = new System.Drawing.Size(75, 23);
-            this.buttonRegistration.TabIndex = 8;
-            this.buttonRegistration.Text = "Register";
-            this.buttonRegistration.UseVisualStyleBackColor = false;
-            this.buttonRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
+            this.btnRegistration.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnRegistration.Location = new System.Drawing.Point(20, 564);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistration.TabIndex = 8;
+            this.btnRegistration.Text = "Register";
+            this.btnRegistration.UseVisualStyleBackColor = false;
+            this.btnRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
             // 
             // label1
             // 
@@ -454,25 +454,25 @@
             this.linkLabel1.Text = "Logout";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // button1
+            // btnMainDashbord
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(19, 174);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 33);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "MAIN DASHBOARD";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnMainDashbord.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnMainDashbord.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainDashbord.Location = new System.Drawing.Point(19, 174);
+            this.btnMainDashbord.Name = "btnMainDashbord";
+            this.btnMainDashbord.Size = new System.Drawing.Size(228, 33);
+            this.btnMainDashbord.TabIndex = 14;
+            this.btnMainDashbord.Text = "MAIN DASHBOARD";
+            this.btnMainDashbord.UseVisualStyleBackColor = false;
+            this.btnMainDashbord.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox5.Controls.Add(this.button4);
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Controls.Add(this.button1);
-            this.groupBox5.Controls.Add(this.button3);
+            this.groupBox5.Controls.Add(this.btnstdReg);
+            this.groupBox5.Controls.Add(this.btnExit);
+            this.groupBox5.Controls.Add(this.btnMainDashbord);
+            this.groupBox5.Controls.Add(this.btnLogout);
             this.groupBox5.Controls.Add(this.pictureBox1);
             this.groupBox5.Location = new System.Drawing.Point(3, -8);
             this.groupBox5.Name = "groupBox5";
@@ -481,41 +481,41 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MAIN MENU";
             // 
-            // button4
+            // btnstdReg
             // 
-            this.button4.BackColor = System.Drawing.Color.SkyBlue;
-            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(19, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(228, 33);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "STUDENT REGISTRATION";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnstdReg.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnstdReg.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnstdReg.Location = new System.Drawing.Point(19, 225);
+            this.btnstdReg.Name = "btnstdReg";
+            this.btnstdReg.Size = new System.Drawing.Size(228, 33);
+            this.btnstdReg.TabIndex = 17;
+            this.btnstdReg.Text = "STUDENT REGISTRATION";
+            this.btnstdReg.UseVisualStyleBackColor = false;
+            this.btnstdReg.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // btnExit
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(32, 606);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 34);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "EXIT";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnExit.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(32, 606);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(196, 34);
+            this.btnExit.TabIndex = 16;
+            this.btnExit.Text = "EXIT";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button3
+            // btnLogout
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(19, 281);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 34);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "LOGOUT";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnLogout.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Tai Le", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(19, 281);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(228, 34);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -533,7 +533,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(918, 679);
+            this.ClientSize = new System.Drawing.Size(921, 683);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -588,18 +588,18 @@
         private System.Windows.Forms.RadioButton radioButtonFemale;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBoxReg;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonRegistration;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnRegistration;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMainDashbord;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.RichTextBox textBoxAddress;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnstdReg;
     }
 }

@@ -64,6 +64,10 @@ namespace campusOneDigitalAcademy
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 loginForm = new Form1();
+
+            loginForm.StartPosition = FormStartPosition.Manual;
+            loginForm.Location = this.Location;
+
             loginForm.Show();
             this.Hide();
         }
@@ -71,6 +75,10 @@ namespace campusOneDigitalAcademy
         private void button1_Click(object sender, EventArgs e)
         {
             RegistrationForm regForm = new RegistrationForm();
+
+            regForm.StartPosition = FormStartPosition.Manual;
+            regForm.Location = this.Location;
+
             regForm.Show();
             this.Hide();
         }
@@ -171,6 +179,11 @@ namespace campusOneDigitalAcademy
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
 
         }

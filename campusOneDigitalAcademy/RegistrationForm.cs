@@ -302,6 +302,9 @@ namespace campusOneDigitalAcademy
             textBoxNIC.Clear();
             textBoxContactNo.Clear();
             comboBoxReg.Focus();
+
+            GenerateNextRegNo();
+            comboBoxReg.Focus();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -363,6 +366,7 @@ namespace campusOneDigitalAcademy
                 }
 
                 con.Close();
+                GenerateNextRegNo();
             }
             catch (Exception ex)
             {
@@ -374,6 +378,10 @@ namespace campusOneDigitalAcademy
         private void button1_Click_1(object sender, EventArgs e)
         {
             DashboardForm dashForm = new DashboardForm();
+
+            dashForm.StartPosition = FormStartPosition.Manual;
+            dashForm.Location = this.Location;
+
             dashForm.Show();
             this.Hide();
         }
@@ -391,6 +399,10 @@ namespace campusOneDigitalAcademy
         private void button3_Click(object sender, EventArgs e)
         {
             Form1 loginForm = new Form1();
+
+            loginForm.StartPosition = FormStartPosition.Manual;
+            loginForm.Location = this.Location;
+
             loginForm.Show();
             this.Hide();
         }
@@ -412,6 +424,37 @@ namespace campusOneDigitalAcademy
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+        private void GenerateNextRegNo()
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed) con.Open();
+
+                string query = "SELECT MAX(regNo) FROM Registration";
+                SqlCommand cmd = new SqlCommand(query, con);
+                object result = cmd.ExecuteScalar();
+
+             
+                if (result != DBNull.Value && result != null)
+                {
+                    int maxId = Convert.ToInt32(result);
+                    comboBoxReg.Text = (maxId + 1).ToString(); 
+                }
+                else
+                {
+                 
+                    comboBoxReg.Text = "1001";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating Registration No: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open) con.Close();
+            }
         }
     }
 }
